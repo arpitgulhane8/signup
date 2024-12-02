@@ -22,7 +22,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match!");
+      toast.info("Passwords do not match!");
       return;
     }
     try {
